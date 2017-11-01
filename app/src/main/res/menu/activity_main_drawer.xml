@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/contribute">
+        <menu>
+            <item
+                android:id="@+id/nav_github"
+                android:icon="@drawable/ic_github_24dp"
+                android:title="@string/github" />
+        </menu>
+    </item>
+
+    <item android:title="@string/courtesy">
+        <menu>
+            <item
+                android:id="@+id/nav_cryptocompare"
+                android:icon="@drawable/ic_cached_black_24dp"
+                android:title="@string/cryptocompare_licence" />
+        </menu>
+    </item>
+    <item android:title="Contact">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_twitter_image_24dp"
+                android:title="@string/contact" />
+            <item
+                android:id="@+id/nav_email"
+                android:icon="@drawable/ic_email_24dp"
+                android:title="@string/email" />
+        </menu>
+    </item>
+
+</menu>

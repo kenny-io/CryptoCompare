@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">CryptoCompare</string>
+
+    <string name="app_full_name">Cryptomon xRata</string>
+    <string name="app_description">An ALC Intermediate Track Challenge App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_order">Order by rates</string>
+    <string name="action_refresh">Refresh</string>
+
+
+    <string name="content_desc">Bitcoin Icon</string>
+
+    <string name="contribute">Contribute here</string>
+    <string name="courtesy">Thanks to:</string>
+    <string name="github">Github</string>
+    <string name="cryptocompare_licence">Cryptocompare API</string>
+    <string name="contact">Twitter</string>
+    <string name="email">Email</string>
+    <string name="git">Github</string>
+
+    <string name="money">Money</string>
+    <string name="btc">BTC</string>
+    <string name="eth">ETH</string>
+
+    <string name="btc_sign">BTC:</string>
+    <string name="eth_sign">ETH:</string>
+
+    <string name="amount_hint">0.00</string>
+
+    <string name="convert">Convert</string>
+    <string name="close">Close</string>
+
+</resources>
