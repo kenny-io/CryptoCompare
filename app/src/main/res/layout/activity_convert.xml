@@ -3,7 +3,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="#f98e"
+    android:background="@drawable/bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <android.support.v7.widget.Toolbar
@@ -55,7 +55,6 @@
                     android:layout_marginRight="100dp"
                     android:layout_height="wrap_content"
                     android:text="BTC"
-
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:textColor="#ffffff"/>

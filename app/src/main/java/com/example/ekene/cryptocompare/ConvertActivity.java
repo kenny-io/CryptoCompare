@@ -110,7 +110,7 @@ public class ConvertActivity extends AppCompatActivity {
                 flatValueEdit.setText(String.format("%1$,.2f", (btcAmount * btcRate)));
                 //btcValueEdit.setText(String.format("%1$,.2f", (btcAmount * (ethRate / btcRate))));
             } catch (NumberFormatException e) {
-                Snackbar.make(findViewById(R.id.main_scroll_view), Constants.INVALID_CONVERSION, Snackbar.LENGTH_LONG).setAction("Action", null).show();
+              //  Snackbar.make(findViewById(R.id.main_scroll_view), Constants.INVALID_CONVERSION, Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
 
         } else if (view == ethConvertButton) {
@@ -119,7 +119,7 @@ public class ConvertActivity extends AppCompatActivity {
                 flatValueEditETH.setText(String.format("%1$,.2f", (ethAmount * ethRate)));
                // ethValueEdit.setText(String.format("%1$,.2f", (ethAmount * (btcRate / ethRate))));
             } catch (NumberFormatException e) {
-                Snackbar.make(findViewById(R.id.main_scroll_view), Constants.INVALID_CONVERSION, Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                //Snackbar.make(findViewById(R.id.main_scroll_view), Constants.INVALID_CONVERSION, Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
 
 //        } else if(view == flatConvertButton) {

@@ -14,7 +14,7 @@
         android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6f0000"
+    android:background="@drawable/bg2"
     tools:context="com.example.ekene.cryptocompare.MainActivity">
 
     <android.support.v7.widget.Toolbar

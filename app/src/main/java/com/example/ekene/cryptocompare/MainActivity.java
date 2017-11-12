@@ -159,7 +159,6 @@ public class MainActivity extends AppCompatActivity {
                                 CardItems card = new CardItems(keyBTC, btc_values.getDouble(keyBTC), eth_values.getDouble(keyETH));
                                 cardItemsList.add(card);
                             }
-
                             adapter = new MyAdapter(cardItemsList, getApplicationContext());
                             recyclerView.setAdapter(adapter);
 
