@@ -33,34 +33,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder>{
         return new ViewHolder(v);
 
 
-        //       ViewHolder holder;
-
-//        if (v == null) {
-//            v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_items, parent, false);
-//            holder = new ViewHolder(v);
-//            holder.currency = v.findViewById(R.id.textViewCurrency);
-//            holder.btc_value = v.findViewById(R.id.btc_value);
-//            holder.eth_value = v.findViewById(R.id.eth_value);
-//            v.setTag(holder);
-//        }
-//        else {
-//            holder = (ViewHolder) v.getTag();
-//        }
-
     }
 
     @Override
     public void onBindViewHolder(ViewHolder holder, final int position) {
-
-//        final CardItems cardRow = cardItemsList.get(position);
-//
-//        final String crossCurrency = cardRow.getCurrency();
-//        final double crossBtc = cardRow.getBtc_value();
-//        final double crossEth = cardRow.getEth_value();
-//
-//        holder.currency.setText(crossCurrency);
-//        holder.btc_value.setText(String.format("%1$,.2f", crossBtc));
-//        holder.eth_value.setText(String.format("%1$,.2f", crossEth));
 
         CardItems cardItem = cardItemsList.get(position);
 
