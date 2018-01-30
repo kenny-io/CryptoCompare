@@ -66,47 +66,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        toggle = new ActionBarDrawerToggle(
-                this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        toggle.setDrawerIndicatorEnabled(true);
-
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int id = item.getItemId();
-                if (id == R.id.nav_github){
-                    Toast.makeText(MainActivity.this, "Opening My Github Repo", Toast.LENGTH_SHORT).show();
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/kennypee"));
-                    startActivity(browserIntent);
-                }
-                else if (id == R.id.nav_cryptocompare){
-                    Toast.makeText(MainActivity.this, "Opening CryptoCompare API ", Toast.LENGTH_SHORT).show();
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cryptocompare.com/api/#introduction"));
-                    startActivity(browserIntent);
-                }
-                else if (id == R.id.nav_contact){
-                    Toast.makeText(MainActivity.this, "Opening CryptoCompare API ", Toast.LENGTH_SHORT).show();
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.twitter.com/kenny_io"));
-                    startActivity(browserIntent);
-                }
-                else if (id == R.id.nav_email){
-                    Toast.makeText(MainActivity.this, "Opening CryptoCompare API ", Toast.LENGTH_SHORT).show();
-                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.gmail.com"));
-                    startActivity(browserIntent);
-                }
-
-                return true;
-            }
-        });
-
 
        // AppBarLayout app = (AppBarLayout)findViewById(R.id.appbar);
 
@@ -124,11 +83,6 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MyAdapter(cardItemsList, this);
         recyclerView.setAdapter(adapter);
 
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        return toggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
     }
 
     private void loadURLData() {
