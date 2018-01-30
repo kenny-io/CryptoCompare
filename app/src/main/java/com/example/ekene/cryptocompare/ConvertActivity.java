@@ -17,7 +17,6 @@ public class ConvertActivity extends AppCompatActivity {
     String currencyFullName;
     EditText btcValueEdit, ethValueEdit, flatValueEdit, flatValueEditETH;
     Button btcConvertButton, ethConvertButton;
-            //flatConvertButton, closeButton;
 
     double btcRate;
     double ethRate;
@@ -50,9 +49,6 @@ public class ConvertActivity extends AppCompatActivity {
 
         btcConvertButton = (Button) findViewById(R.id.btc_convert_button);
         ethConvertButton = (Button) findViewById(R.id.eth_convert_button);
-//        flatConvertButton = (Button) findViewById(R.id.flat_convert_button);
-//        closeButton = (Button) findViewById(R.id.button_close);
-
 
 
         Intent intent = getIntent();
@@ -108,29 +104,20 @@ public class ConvertActivity extends AppCompatActivity {
             try {
                 double btcAmount = Double.parseDouble(btcValueEdit.getText().toString());
                 flatValueEdit.setText(String.format("%1$,.2f", (btcAmount * btcRate)));
-                //btcValueEdit.setText(String.format("%1$,.2f", (btcAmount * (ethRate / btcRate))));
+                
             } catch (NumberFormatException e) {
-              //  Snackbar.make(findViewById(R.id.main_scroll_view), Constants.INVALID_CONVERSION, Snackbar.LENGTH_LONG).setAction("Action", null).show();
+             
             }
 
         } else if (view == ethConvertButton) {
             try {
                 double ethAmount = Double.parseDouble(ethValueEdit.getText().toString());
                 flatValueEditETH.setText(String.format("%1$,.2f", (ethAmount * ethRate)));
-               // ethValueEdit.setText(String.format("%1$,.2f", (ethAmount * (btcRate / ethRate))));
+               
             } catch (NumberFormatException e) {
-                //Snackbar.make(findViewById(R.id.main_scroll_view), Constants.INVALID_CONVERSION, Snackbar.LENGTH_LONG).setAction("Action", null).show();
+               
             }
 
-//        } else if(view == flatConvertButton) {
-//            try {
-//                double flatAmount = Double.parseDouble(flatValueEdit.getText().toString());
-//                btcValueEdit.setText(String.format("%1$,.2f", (flatAmount / btcRate)));
-//                ethValueEdit.setText(String.format("%1$,.2f", (flatAmount / ethRate)));
-//            } catch (NumberFormatException e) {
-//                Snackbar.make(findViewById(R.id.main_scroll_view), Constants.INVALID_CONVERSION, Snackbar.LENGTH_LONG).setAction("Action", null).show();
-//            }
-//        }
         }
 
     }}
